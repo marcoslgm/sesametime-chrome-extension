@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        width: 300px;
+      }
+      h4 {
+        float: left;
+        margin: 1px 10px;
+      }
+      label {
+        padding: 1px 4px;
+        border-radius: 4px;
+        font-weight: bold;
+        color: #FFF;
+        float: left;
+      }
+      #loggedOut > label {
+        background-color: #AAA;
+      }
+      #online > label {
+        background-color: #0A0;
+      }
+      #offline > label {
+        background-color: #F00;
+      }
+      button {
+        margin-top: 20px;
+        padding: 8px;
+        border-radius: 4px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        cursor: pointer;
+      }
+      #online > button {
+        color: #F00;
+        border-color: #F00;
+      }
+      #offline > button {
+        color: #0A0;
+        border-color: #0A0;
+      }
+      p {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="loggedOut">
+      <label>LOGGED OUT</label>
+      <h4>No has iniciado sesión</h4>
+      <button id="actionButtonLogIn">Iniciar sesión</button>
+    </div>
+    <div id="online">
+      <label>ON LINE</label>
+      <h4>Estás registrando tiempo</h4>
+      <button id="actionButtonSetOff">Fichar salida</button>
+    </div>
+    <div id="offline">
+      <label>OFF LINE</label>
+      <h4>No estás registrando tiempo</h4>
+      <button id="actionButtonSetOn">Fichar entrada</button>
+    </div>
+    <p>
+      <a href="" id="webLink">Ir a sesametime.com</a>
+    </p>
+  </body>
+  <script src="popup.js"></script>
+</html>
