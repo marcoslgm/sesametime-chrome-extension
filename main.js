@@ -68,7 +68,7 @@ window.app = app
 function start() {
     chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, function (tabs) {
         var isSesametimeUrl = tabs[0] && tabs[0].url && tabs[0].url.indexOf('sesametime.com') > -1
-        var isOutdated = !app.updated || app.updated < (new Date().getTime() - 2 * 1000 * 60)
+        var isOutdated = !app.updated || app.updated <= (new Date().getTime() - 5 * 1000 * 60)
         
         // Only opdate status if it is outdated or current tab is sesametime.com page.
         if (isOutdated || isSesametimeUrl) {
