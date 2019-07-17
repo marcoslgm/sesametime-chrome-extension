@@ -3,7 +3,7 @@
 
   "name": "Sesame Time",
   "description": "This extension allows the user to track its working time.",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "browser_action": {
     "default_icon": "icon.png",
